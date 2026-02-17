@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+ width:100%;
+ height: 100%;
+ display: flex;
+
+}
+#left{
+    width:38%;
+    height:100%;
+    position: relative;
+
+}
+#right{
+    width:62%;
+    height:100%;
+    background-color: aquamarine;
+}
+#r-top{
+    width:100%;
+    height:50%;
+    background-color: blue;
+    display: flex;
+}
+#r-bottom{
+    width:100%;
+    height:50%;
+    background-image: url(https://images.unsplash.com/photo-1618502913824-e45c41e932d5?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position:center;
+    background-size: cover;
+}
+#rtopleft{
+    width:55%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: bottom;
+}
+#rtopright{
+    width: 45%;
+    height:100%;
+    background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#lnav{
+    justify-content: space-between;
+    display: flex;
+    width:100%;
+    padding:20px 30px;
+}
+#lnavr a{
+    margin-right: 20px;
+    color: black;
+    font-weight: 500;
+    font: size 14px;
+    text-decoration: none;
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+#lnavr i{
+    color: royalblue;
+}
+#left #textcenter{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+}
+#textcenter h1{
+       font-size:90px;
+       font-weight: 900;
+       
+       
+}
+#textcenter p{
+    font-size:20px;
+    opacity: .6;
+    line-height:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+#textcenter a{
+    text-decoration:none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom:5px;
+    font-size:13px;
+    font-weight:600 ;
+    opacity:.6;
+}
+@media (max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width:100%;
+    }
+    #main #right{
+        width:100%;
+    }
+    
+}

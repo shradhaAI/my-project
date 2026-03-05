@@ -1,0 +1,1 @@
+git ko pehle initialize karna hota hai jis se bo aapki file ko pehchane.
